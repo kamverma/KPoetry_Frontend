@@ -1,0 +1,12 @@
+.quote-section {
+    height: 80vh;
+    background-image: url(../../../assets/images/wine.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+}
+ p {
+    font-size: 36px;
+    font-family: 'Caveat', cursive;
+    line-height: 56px;
+ }

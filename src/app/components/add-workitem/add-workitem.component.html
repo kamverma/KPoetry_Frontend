@@ -1,0 +1,25 @@
+<div class="add-workitem">
+    <div class="container mx-auto">
+        <div class="instructions-container w-100 text-white">
+            <p class="font-weight-bold">Please keep the following things in mind while making a submission:</p>
+            <ol>
+                <li>Enter a crisp and clear title for your submission. The submissions made with no title will be saved as 'Untitled' in the workspaces.</li>
+                <li>Title should not exceed the limit of 255 characters.</li>
+                <li>Workitem body or the main content has no limitations on words so one may write freely whatever heart demands.</li>
+                <li>The submission you're making should be your original work and not a plagiarism.</li>
+            </ol>
+            <p class="font-weight-bold">Happy Writing!</p>
+        </div>
+        <div class="w-100">
+            <form>
+                <div class="form-group">
+                    <input id="title" type="text" class="form-control" maxlength="255" placeholder="Title" [(ngModel)] = "title" [ngModelOptions]="{standalone: true}">
+                    <textarea id="body" class="form-control" rows="10" [(ngModel)] = "body" [ngModelOptions]="{standalone: true}"></textarea>
+                </div>
+            </form>
+            <button *ngIf="!updated" (click)="addWorkitem()" class="btn btn-dark">Submit</button>
+            <button *ngIf="updated" (click)="updateWorkitem()" class="btn btn-dark">Update</button>
+            <a routerLink="/workitems" routerLinkActive="true"><button *ngIf="updated" class="btn btn-dark ml-4">Cancel</button></a>
+        </div>
+    </div>
+</div>

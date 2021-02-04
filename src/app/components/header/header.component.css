@@ -1,0 +1,27 @@
+.header {
+    height: 45vh;
+}
+.header-section {
+    background-color: #000000;
+    height: 20%;
+}
+.header-content {
+    height: 80%;
+}
+.header-content a {
+    text-decoration: none;
+    color: #000000;
+}
+.header-content a:hover {
+    opacity: .5;
+}
+.nav-home {
+    font-size: 60px;
+    font-family: 'Caveat', cursive;
+}
+.nav-bar {
+    margin-bottom: 40px;
+}
+.nav-link {
+    font-size: 12px;
+}

@@ -1,0 +1,17 @@
+.lp-section {
+    min-height: 60vh;
+    border-top: 2px solid #cccccc;
+    background: #000;
+    color: #CCC;
+}
+.section-heading {
+    font-size: 24px;
+}
+.text-content {
+    width: 60%;
+}
+.img-box {
+    background-color: #eeeeee;
+    padding: 40px;
+    width: 40%;
+}

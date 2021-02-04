@@ -1,0 +1,35 @@
+.add-workitem {
+    background-color: #1B354E;
+    padding: 40px;
+}
+.container {
+    width: 60%;
+}
+.instructions-container {
+    width: 60%;
+}
+.instructions-container p {
+    font-size: 14px;
+    margin: 20px 0;
+}
+.instructions-container ol {
+    margin-left: 20px;
+}
+.instructions-container ol li {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+input, textarea {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 10px;
+    border-radius: 0;
+    color: #000000;
+}
+input:focus, textarea:focus {
+    box-shadow: none;
+    /* outline: -webkit-focus-ring-color auto 1px; */
+    outline-color: -webkit-focus-ring-color;
+    outline-style: auto;
+    outline-width: 1px;
+}

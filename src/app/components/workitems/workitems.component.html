@@ -1,0 +1,4 @@
+<div class="workitems d-flex flex-column w-100">
+    <h2 class="text-white font-weight-bold">All Submission</h2>
+    <app-workitem *ngFor="let workitem of workitems" [workitem] = "workitem" (onDelete)="deleteWorkitem(workitem.id)"></app-workitem>
+</div>

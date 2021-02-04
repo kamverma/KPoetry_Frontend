@@ -1,0 +1,17 @@
+<div class="workitem d-flex flex-column p-4 bg-white">
+    <div class="workitem-top d-flex flex-row justify-content-between">
+        <div class="d-flex flex-row align-items-center">
+            <span class="title font-weight-bold mr-2">{{workitem.title}}</span>
+            <span class="date">{{getPostedOnDate(workitem.posted_on)}}</span>
+        </div>
+        <div>
+            <a routerLink="/add-workitem" routerLinkActive="true" [state]="{ workitem:  workitem, isUpdate: isUpdate}">
+                <button (click)="emitOnUpdate()" class="btn btn-dark px-4 ml-2 action-btn">Update</button>
+            </a>
+            <button (click)="emitOnDelete(workitem)" class="btn btn-dark px-4 ml-2 action-btn btn-delete">Delete</button>
+        </div>
+    </div>
+    <div class="workitem-body">
+        {{workitem.body}}
+    </div>
+</div>

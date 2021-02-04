@@ -1,0 +1,20 @@
+<div>
+    <div class="header d-flex flex-column">
+        <div class="header-section py-2 px-3 w-100 d-flex flex-row justify-content-between">
+            <button class="btn btn-link text-white text-decoration-none text-uppercase">Home</button>
+            <div>
+                <a routerLink="/user/register" routerLinkActive="active"><button class="btn btn-link text-white text-decoration-none text-uppercase">Register</button></a>
+                <a routerLink="/user/login" routerLinkActive="active"><button class="btn px-4 btn-link text-white text-decoration-none text-uppercase">Login</button></a>
+                <a href=""><button class="btn px-4 btn-link text-white text-decoration-none text-uppercase" (click)="onLogoutSubmit()">Logout</button></a>
+            </div>
+        </div>
+        <div class="header-content d-flex flex-column w-100 align-items-center">
+            <a routerLink="/" routerLinkActive="active" class="nav-home my-auto">K's Poetry</a>
+            <div class="d-flex flex-row mx-auto font-weight-bold text-uppercase nav-bar">
+                <a routerLink="/workitems" routerLinkActive="active" class="px-2 nav-link">All Submission</a>
+                <a routerLink="/add-workitem" routerLinkActive="active" class="px-2 nav-link">New Submission</a>
+                <a class="px-2 nav-link" href="">About</a>
+            </div>
+        </div>
+    </div>
+</div>

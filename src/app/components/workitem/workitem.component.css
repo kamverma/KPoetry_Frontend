@@ -1,0 +1,30 @@
+.workitem {
+    min-height: 20vh;
+    width: 80%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.workitem-top {
+    margin-bottom: 10px;
+}
+.title {
+    font-size: 16px;
+}
+.date {
+    font-size: 12px;
+    color: #777777;
+}
+.btn-delete {
+    background-color: #E50914;
+}
+.action-btn {
+    border: none;
+    outline: none;
+}
+.action-btn:hover {
+    opacity: .5;
+}
+.workitem-body {
+    font-size: 14px;
+    color: #777777;
+}
